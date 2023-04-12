@@ -41,10 +41,15 @@ contract RemoteVoting {
 
     function removeCandidate(uint256 id) public candidateExists(id){
         require(msg.sender == owner, "Not the owner");
-        delete IDtoCandidate[id];
+        require(id < candidateCount, "index out of bound");
+
+        for (uint i = id; i < candidateCount; i++) {
+            IDtoCandidate[i] = IDtoCandidate[i + 1];
+        }
+        delete IDtoCandidate[candidateCount];
         candidateCount--;
-        IDtoVotes[id] = 0;
     }
+
 
     function viewVotes(uint256 id) public view candidateExists(id) returns (uint256) {
         return IDtoVotes[id];
