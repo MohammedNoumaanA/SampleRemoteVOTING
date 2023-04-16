@@ -1,14 +1,14 @@
 import { ConnectButton } from "@rainbow-me/rainbowkit";
-import Logo from './RemoteVoting.png';
+import Logo from 'C:/Users/Admin/Desktop/final_vote/SampleRemoteVOTING/voting/src/RemoteVoting.png';
 import { useAccount, useContract, useSigner } from 'wagmi'
 import { useState,useEffect } from "react";
 
-import AddCandidate from "./Components/AddCandidate";
-import Voting from "./Components/Voting";
-import RemoveCandidate from "./Components/RemoveCandidate";
-import ViewVotes from "./Components/ViewVotes";
+import AddCandidate from "C:/Users/Admin/Desktop/final_vote/SampleRemoteVOTING/voting/src/Components/AddCandidate";
+import Voting from "C:/Users/Admin/Desktop/final_vote/SampleRemoteVOTING/voting/src/Components/Voting.js";
+import RemoveCandidate from "C:/Users/Admin/Desktop/final_vote/SampleRemoteVOTING/voting/src/Components/AddCandidate";
+import ViewVotes from "C:/Users/Admin/Desktop/final_vote/SampleRemoteVOTING/voting/src/Components/ViewVotes.js";
 
-import { CONTRACT_ADDRESS, CONTRACT_ABI } from "./CONTRACT";
+import { CONTRACT_ADDRESS, CONTRACT_ABI } from "C:/Users/Admin/Desktop/final_vote/SampleRemoteVOTING/voting/src/CONTRACT.js";
 
 function App() {
 
